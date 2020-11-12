@@ -10,12 +10,16 @@
 * [BayesianTools](https://github.com/florianhartig/BayesianTools) just a collection of MCMC and SMC algorithms.
 * [stemr](https://github.com/fintzij/stemr): Baysian Inference for Stochastic Epidemic Models via the Linear Noise Approximation
 * [LibBi](http://libbi.org) state space modeling and inference, with R package [rbi](https://CRAN.R-project.org/package=rbi).
+* [Torsten](https://github.com/metrumresearchgroup/Torsten) provides helper functions to fit PK/PD models in Stan
 
 ## examples, etc.
 
 * Nimble, Stan, BUGS code for discrete time stochastic epi models: https://github.com/wzmli/hybridx
 * Stan ecology examples: https://stanecology.github.io
 * Intro to PMCMC for R via LibBi: https://github.com/akira-endo/Intro-PMCMC 
+* Estimating HIV incidence via Stan: https://github.com/frbrz25/Thesis_Codes
+* TSIR for CHIK/ZIKV in Stan: https://github.com/jriou/comp_chik_zika
+* More TSIR in Stan: https://github.com/jriou/bora
 
 ## new research, miscellanea
 
