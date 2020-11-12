@@ -1,8 +1,26 @@
 # fitexamples
 
-* [NIMBLE](https://r-nimble.org) has (https://r-nimble.org/html_manual/cha-welcome-nimble.html)[HTML docs] here.
+## software packages
+
+* [Nimble](https://r-nimble.org) has (https://r-nimble.org/html_manual/cha-welcome-nimble.html)[HTML docs] here.
 * [pomp](https://kingaa.github.io/pomp/index.html) is here.
 * [mstate](https://mrc-ide.github.io/mcstate/) does SMC and PMCMC for state space models.
 * [Stan](https://mc-stan.org) is here.
 * [Greta](https://greta-stats.org) is here, fits graphical models.
 * [BayesianTools](https://github.com/florianhartig/BayesianTools) just a collection of MCMC and SMC algorithms.
+* [stemr](https://github.com/fintzij/stemr): Baysian Inference for Stochastic Epidemic Models via the Linear Noise Approximation
+* [LibBi](http://libbi.org) state space modeling and inference, with R package [rbi](https://CRAN.R-project.org/package=rbi).
+
+## examples, etc.
+
+* Nimble, Stan, BUGS code for discrete time stochastic epi models: https://github.com/wzmli/hybridx
+* Stan ecology examples: https://stanecology.github.io
+* Intro to PMCMC for R via LibBi: https://github.com/akira-endo/Intro-PMCMC 
+
+## new research, miscellanea
+
+* discontinuous HMC (for discrete parameters): https://github.com/aki-nishimura/discontinuous-hmc
+* general profiling for DDEs: https://github.com/cran/gpDDE 
+* profile likelihood for DDEs: https://github.com/VulpeculaZ/DDE
+* inference for stochastic delays: https://github.com/cbskust/DDE_BD
+* pseudo-marginal inference in Julia via LNA/CLE: https://github.com/davidwarne/Warne2019_GuideToPseudoMarginal
