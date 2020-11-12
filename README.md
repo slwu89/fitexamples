@@ -2,7 +2,7 @@
 
 ## software packages
 
-* [Nimble](https://r-nimble.org) has (https://r-nimble.org/html_manual/cha-welcome-nimble.html)[HTML docs] here.
+* [Nimble](https://r-nimble.org) has [HTML docs](https://r-nimble.org/html_manual/cha-welcome-nimble.html) here.
 * [pomp](https://kingaa.github.io/pomp/index.html) is here.
 * [mcstate](https://mrc-ide.github.io/mcstate/) does SMC and PMCMC for state space models.
 * [Stan](https://mc-stan.org) is here.
