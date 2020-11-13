@@ -21,6 +21,7 @@
 * TSIR for CHIK/ZIKV in Stan: https://github.com/jriou/comp_chik_zika
 * More TSIR in Stan: https://github.com/jriou/bora
 * List of likelihood-free examples, mostly with code, including some real interesting ones (ERGMs): https://github.com/dennisprangle/LFexamples
+* chaotic voles: https://github.com/mfasiolo/volesModel uses the [synlik](https://CRAN.R-project.org/package=synlik) package to fit data with synthetic likelihood MCMC and accompanies this paper https://arxiv.org/abs/1511.02644
 
 ## new research, miscellanea
 
