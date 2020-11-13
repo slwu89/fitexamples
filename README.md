@@ -20,6 +20,7 @@
 * Estimating HIV incidence via Stan: https://github.com/frbrz25/Thesis_Codes
 * TSIR for CHIK/ZIKV in Stan: https://github.com/jriou/comp_chik_zika
 * More TSIR in Stan: https://github.com/jriou/bora
+* List of likelihood-free examples, mostly with code, including some real interesting ones (ERGMs): https://github.com/dennisprangle/LFexamples
 
 ## new research, miscellanea
 
