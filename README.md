@@ -31,3 +31,4 @@
 * profile likelihood for DDEs: https://github.com/VulpeculaZ/DDE
 * inference for stochastic delays: https://github.com/cbskust/DDE_BD
 * pseudo-marginal inference in Julia via LNA/CLE: https://github.com/davidwarne/Warne2019_GuideToPseudoMarginal
+* fits SDEs with time-varying parameters: https://github.com/TheoMichelot/smoothSDE
