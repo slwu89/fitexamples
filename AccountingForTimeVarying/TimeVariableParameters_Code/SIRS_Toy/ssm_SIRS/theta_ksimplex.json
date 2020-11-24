@@ -1,0 +1,50 @@
+{
+  "resources" : [
+    {
+      "name" : "values",
+      "data" : {
+        "d_immune" : 2555.642127770557,
+        "d_infection" : 13.92603499397228,
+        "I" : 29.9448461976335,
+        "vol" : 0.07489354195734418,
+        "S" : 600.9998706149319
+      },
+      "description" : "initial values for the parameters"
+    },
+    {
+      "name" : "covariance",
+      "data" : {
+        "d_immune" : {
+          "d_immune" : 254.697826215736
+        },
+        "d_infection" : {
+          "d_infection" : 1.4900559404227
+        },
+        "I" : {
+          "I" : 3.12831869549118
+        },
+        "vol" : {
+          "vol" : 0.00231179879279807
+        },
+        "S" : {
+          "S" : 64.6891819853336
+        }
+      },
+      "description" : "covariance matrix"
+    },
+    {
+      "name" : "summary",
+      "data" : {
+        "n_data" : 156,
+        "sum_squares" : null,
+        "id" : 0,
+        "log_ltp" : -494.3111903660947,
+        "AICc" : 941.190792143857,
+        "DIC" : 940.6993762344182,
+        "n_parameters" : 5,
+        "AIC" : 940.7907921438571,
+        "log_likelihood" : -465.3953960719285
+      }
+    }
+  ]
+}

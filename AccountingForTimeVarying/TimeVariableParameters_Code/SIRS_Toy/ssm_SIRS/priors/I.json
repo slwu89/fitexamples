@@ -1,0 +1,13 @@
+{
+  "name": "uniform",
+  "distributionParameter": [
+    {
+      "name": "lower",
+      "value": 27
+    },
+    {
+      "name": "upper",
+      "value": 33
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "normal",
+  "distributionParameter": [
+    {
+      "name": "lower",
+      "value": 2300
+    },
+    {
+      "name": "upper",
+      "value": 2800
+    },
+    {
+      "name": "mean",
+      "value": 2555
+    },
+    {
+      "name": "sd",
+      "value": 120
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "data": [
+    {
+      "name": "incidence_obs",
+      "require": {
+        "path": "data/data.csv",
+        "fields": [
+          "date",
+          "incidence_obs"
+        ]
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "name": "N",
+      "description": "population size",
+      "require": {
+        "name": "N",
+        "path": "priors/N.json"
+      }
+    },
+    {
+      "name": "S",
+      "description": "initial susceptible number",
+      "require": {
+        "name": "S",
+        "path": "priors/S.json"
+      }
+    },
+    {
+      "name": "I",
+      "description": "initial infected number",
+      "require": {
+        "name": "I",
+        "path": "priors/I.json"
+      }
+    },
+    {
+      "name": "beta",
+      "description": "transmission parameter",
+      "require": {
+        "name": "beta",
+        "path": "priors/beta.json"
+      }
+    },
+    {
+      "name": "r_recovery",
+      "description": "rate of recovery",
+      "transformation": "1/d_infection",
+      "require": {
+        "name": "d_infection",
+        "path": "priors/d_infection.json"
+      }
+    },
+    {
+      "name": "r_immune",
+      "description": "rate of loss immunity",
+      "transformation": "1/d_immune",
+      "require": {
+        "name": "d_immune",
+        "path": "priors/d_immune.json"
+      }
+    },
+    {
+      "name": "r_death",
+      "description": "rate of death",
+      "transformation": "1/d_life",
+      "require": {
+        "name": "d_life",
+        "path": "priors/d_life.json"
+      }
+    },
+    {
+      "name": "vol",
+      "description": "volatility",
+      "require": {
+        "name": "vol",
+        "path": "priors/vol.json"
+      }
+    },
+    {
+      "name": "rho",
+      "description": "reporting rate",
+      "require": {
+        "name": "rho",
+        "path": "priors/rho.json"
+      }
+    }
+  ],
+  "populations": [
+    {
+      "name": "Paris",
+      "composition": [
+        "S",
+        "I",
+        "R"
+      ],
+      "remainder": {
+        "name": "R",
+        "pop_size": "N"
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "from": "S",
+      "to": "I",
+      "description": "infection",
+      "rate": "beta*I/N",
+      "keywords": [
+        "transmission"
+      ],
+      "accumulators": [
+        "incidence"
+      ]
+    },
+    {
+      "from": "I",
+      "to": "R",
+      "description": "recovery",
+      "rate": "r_recovery"
+    },
+    {
+      "from": "I",
+      "to": "S",
+      "description": "death of I",
+      "rate": "r_death"
+    },
+    {
+      "from": "R",
+      "to": "S",
+      "description": "death of R",
+      "rate": "r_death"
+    },
+    {
+      "from": "R",
+      "to": "S",
+      "description": "loss of immunity",
+      "rate": "r_immune"
+    }
+  ],
+  "observations": [
+    {
+      "name": "incidence_obs",
+      "start": "2000-01-02",
+      "distribution": "poisson",
+      "mean": "rho * (incidence)"
+    }
+  ],
+  "sde": {
+    "drift": [
+      {
+        "name": "beta",
+        "f": 0,
+        "transformation": "beta"
+      }
+    ],
+    "dispersion": [
+      [
+        "vol"
+      ]
+    ]
+  }
+}

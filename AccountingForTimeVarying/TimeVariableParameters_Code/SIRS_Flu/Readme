@@ -1,0 +1,27 @@
+# Install SSM for Linux or Mac OSX see: https://github.com/JDureau/ssm
+
+# The model is in the file ssm.json
+# /data the data files 
+# /prior the definition of the parameter priors
+# theta.json a random initial parameter values 
+# see https://github.com/JDureau/ssm/README.md
+
+# to compile le model and create the /bin
+ssm
+
+# to run different chaine with kmcmc
+cd ./ssm_Flu/bin; 
+# see the help: ./kmcmc --help
+cat ../theta_ksimplex.json | ./kmcmc -M 50000  --trace --traj -I 1 --root ../kmcmc > ../theta_kmcmc1.json
+cat ../theta_kmcmc1.json | ./kmcmc -M 1000000 | ./kmcmc -M 500000 --trace --traj -I 2 --root ../kmcmc > ../theta_kmcmc2.json
+
+# to run different chaine with pmcmc: -N
+cd ./ssm_Flu/bin; 
+# see the help: ./pmcmc --help
+cat ../theta_kmcmc2.json | ./pmcmc psr -J 2000 -M  50000 -N 4 --trace --traj --hat -I 1 --root ./pmcmc > ../theta_pmcmc1.json
+cat ../theta_pmcmc1.json | ./pmcmc psr -J 5000 -M 100000 -N 4 --trace --traj --hat -I 2 --root ./pmcmc > ../theta_pmcmc2.json
+
+# another  possibility would be to used previous files with parameter values that have already converged in kmcmc or in pmcmc
+cat ../theta_kmcmc_0.json | ./pmcmc psr -J 5000 -M  100000 -N 4 --trace --traj --hat -I 2 --root ./pmcmc > ../theta_pmcmc2.json
+or
+cat ../theta_pmcmc_0.json | ./pmcmc psr -J 2000 -M   50000 -N 4 --trace --traj --hat -I 2 --root ./pmcmc > ../theta_pmcmc2.json

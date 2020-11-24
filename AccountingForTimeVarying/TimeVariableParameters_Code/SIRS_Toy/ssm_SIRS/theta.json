@@ -1,0 +1,44 @@
+{
+  "resources": [
+    {
+      "name": "values",
+      "description": "initial values for the parameters",
+      "data": {
+        "S": 644.477541325614,
+        "I": 30.916557724122,
+        "beta": 0.104515657853335,
+        "d_infection": 13.4022426029127,
+        "d_immune": 2665.96104401568,
+        "vol": 0.0133944542426616,
+        "rho": 0.994759215432696
+      }
+    },
+    {
+      "name": "covariance",
+      "description": "covariance matrix",
+      "data": {
+        "S": {
+          "S": 64.4477541325614
+        },
+        "I": {
+          "I": 3.0916557724122
+        },
+        "beta": {
+          "beta": 0.0104515657853335
+        },
+        "d_infection": {
+          "d_infection": 1.34022426029127
+        },
+        "d_immune": {
+          "d_immune": 266.596104401568
+        },
+        "vol": {
+          "vol": 0.00133944542426616
+        },
+        "rho": {
+          "rho": 0.0994759215432695
+        }
+      }
+    }
+  ]
+}
