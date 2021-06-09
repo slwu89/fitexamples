@@ -32,3 +32,8 @@
 * inference for stochastic delays: https://github.com/cbskust/DDE_BD
 * pseudo-marginal inference in Julia via LNA/CLE: https://github.com/davidwarne/Warne2019_GuideToPseudoMarginal
 * fits SDEs with time-varying parameters: https://github.com/TheoMichelot/smoothSDE
+
+## specific papers
+* (Oliver Maclaren) Likelihood based methods for misspecified epidemic models: https://arxiv.org/abs/2103.16058
+* (Simon Wood) fit COVID-19 infection trajectories with GAMs https://onlinelibrary.wiley.com/doi/full/10.1111/biom.13462
+* (Simon Wood) fit COVID-19 ODE models with spline beta(t) function https://www.medrxiv.org/content/10.1101/2021.02.03.21251112v2
