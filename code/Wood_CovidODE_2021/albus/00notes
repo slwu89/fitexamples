@@ -1,0 +1,29 @@
+* Requires R.
+
+* Uses R libraries mgcv, parallel and timeDate
+
+* data and fixed parameters are from Konck et al. supplementary material
+  except where noted in the paper. 
+
+* Model is coded in C in albus-gl.c
+
+* To compile .c use, e.g. ...
+  R CMD SHLIB albus.c
+  ... to get albus.so.
+  -- windows users require Rtools to do this
+  https://cran.r-project.org/bin/windows/Rtools/
+
+* .r file contains all the code you need and is a bit messy
+  (this is a zero budget exercise).
+  - functions come first, then after the 'setwd' command, that you
+    need to edit, comes the code to do the fitting.
+  - setup.model gets data, constants etc (and sources data.r).
+  - fit.model fits the model. On 7 physical cores it takes about
+    an hour to do all 7 regions (much longer than for the original
+    model as there are far more parameters, and the smoothing
+    parameter selection requires multiple fits). 
+  - Then come code to  paste the results back into the regional
+    data objects and get derivatives for delta method (1-2 minutes).
+  - plots follow.
+
+
