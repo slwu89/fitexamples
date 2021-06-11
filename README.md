@@ -11,6 +11,7 @@
 * [stemr](https://github.com/fintzij/stemr): Baysian Inference for Stochastic Epidemic Models via the Linear Noise Approximation
 * [LibBi](http://libbi.org) state space modeling and inference, with R package [rbi](https://CRAN.R-project.org/package=rbi).
 * [Torsten](https://github.com/metrumresearchgroup/Torsten) provides helper functions to fit PK/PD models in Stan
+* [smcDE](https://github.com/shijiaw/smcDE): An R package described in our manuscript "Adaptive semiparametric Bayesian differential equations via sequential Monte Carlo methods"
 
 ## examples, etc.
 
