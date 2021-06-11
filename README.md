@@ -27,7 +27,7 @@
 ## new research, miscellanea
 
 * discontinuous HMC (for discrete parameters): https://github.com/aki-nishimura/discontinuous-hmc
-* general profiling for DDEs: https://github.com/cran/gpDDE 
+* general profiling for DDEs: https://github.com/cran/gpDDE from the following [PhD dissertation](https://iro.uiowa.edu/discovery/fulldisplay/alma9983777255302771/01IOWA_INST:ResearchRepository)
 * profile likelihood for DDEs: https://github.com/VulpeculaZ/DDE
 * inference for stochastic delays: https://github.com/cbskust/DDE_BD
 * pseudo-marginal inference in Julia via LNA/CLE: https://github.com/davidwarne/Warne2019_GuideToPseudoMarginal
